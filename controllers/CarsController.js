@@ -33,11 +33,11 @@ router.post("/", (req, res) => {
 });
 
 router.put("/:id", (req, res) => {
-  res.send("hello from PUT /bounties/:id");
+  res.send("hello from PUT /cars/:id");
 });
 
 router.delete("/:id", (req, res) => {
-  res.send("hello from DELETE /bounties/:id");
+  res.send("hello from DELETE /cars/:id");
 });
 
 module.exports = router;
