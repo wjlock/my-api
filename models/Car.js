@@ -7,19 +7,15 @@ const carCommentSchema = new mongoose.Schema({
 
 const carSchema = new mongoose.Schema({
   make: {
-    type: String,
-    required: true,
-    unique: true,
+    makeName: String,
   },
   model: {
-    type: String,
-    minlength: 10,
-    maxlength: 200,
+    modelName: String,
   },
   mpg: {
     type: Number,
-    min: 1000,
-    max: 1000000,
+    min: 1,
+    max: 1000,
   },
   editorComments: {
     type: String,
